@@ -8,9 +8,7 @@ Widgets = c(1500,800,1500,1400,900,800,1400,1400,1300,1400,700,
 n = length(Widgets) # Examples of potentially observable data sets:
 Sim.Cost = beta0 + beta1*Widgets + rnorm(n, 0, sigma)
 head(cbind(Widgets, Sim.Cost))
-
 lm(Sim.Cost ~ Widgets)$coefficients[2]
-path = "C:\\Users\\B305238\\Desktop\\OneDrive - BNSF Railway\\URA_proofs_pdf\\figures\\"
 
 ## Figure 3.1
 Nsim = 100000; b1.ols = numeric(Nsim)
@@ -166,3 +164,7 @@ abline(v=c(qt(.025,98), qt(.975,98)), col="gray")
 ## Section 3.9.3
 Lower.tail = pt(-1.459, 98) ; Upper.tail = 1 - pt(1.459, 98)
 Lower.tail + Upper.tail
+
+## Exercise 1
+inc = read.csv("https://raw.githubusercontent.com/andrea2719/
+URA-DataSets/master/t11_1.csv")
