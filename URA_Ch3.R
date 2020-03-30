@@ -168,3 +168,7 @@ Lower.tail + Upper.tail
 ## Exercise 1
 inc = read.csv("https://raw.githubusercontent.com/andrea2719/
 URA-DataSets/master/t11_1.csv")
+head(inc)
+plot(acreage~salary, data=inc)
+fit1 = lm(acreage~salary, data=inc)
+summary(fit1)
