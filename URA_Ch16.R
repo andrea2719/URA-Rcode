@@ -53,7 +53,8 @@ plot(X.all4, Y.all4)
 points(X.suspect4, Y.suspect4, pch=19)
 
 ## Figure 16.4
-# method 1: "By hand" calculation of hii. set.seed(12345)
+# method 1: "By hand" calculation of hii. 
+set.seed(12345)
 W = rnorm(100, 70,10)
 U = .05*W + rnorm(100,0,.1)
 W = c(W,80); U = c(U,2.8)
